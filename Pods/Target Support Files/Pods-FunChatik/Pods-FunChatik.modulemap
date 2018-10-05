@@ -1,0 +1,6 @@
+framework module Pods_FunChatik {
+  umbrella header "Pods-FunChatik-umbrella.h"
+
+  export *
+  module * { export * }
+}

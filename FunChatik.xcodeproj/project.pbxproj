@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE980494F0797585D985546F /* Pods_FunChatik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAA492BDAE6AF8BDCB2288A /* Pods_FunChatik.framework */; };
+		E108E29520EC5B65000ED27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E108E29420EC5B65000ED27F /* AppDelegate.swift */; };
+		E108E29A20EC5B65000ED27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E108E29820EC5B65000ED27F /* Main.storyboard */; };
+		E108E29C20EC5B65000ED27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E108E29B20EC5B65000ED27F /* Assets.xcassets */; };
+		E108E29F20EC5B65000ED27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E108E29D20EC5B65000ED27F /* LaunchScreen.storyboard */; };
+		E10A233C20EC60A100C1AA72 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10A233A20EC60A100C1AA72 /* SWRevealViewController.m */; };
+		E10A234220EC632000C1AA72 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10A234120EC632000C1AA72 /* ChatVC.swift */; };
+		E10A234520EC633300C1AA72 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10A234420EC633300C1AA72 /* ChannelVC.swift */; };
+		E126CBC720F332B8006F7652 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126CBC620F332B8006F7652 /* AuthService.swift */; };
+		E126CBC920F33E36006F7652 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126CBC820F33E36006F7652 /* RoundedButton.swift */; };
+		E1A06FAF20FD6686000D05F9 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A06FAD20FD6686000D05F9 /* AddChannelVC.swift */; };
+		E1A06FB020FD6686000D05F9 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A06FAE20FD6686000D05F9 /* AddChannelVC.xib */; };
+		E1A06FB220FD7361000D05F9 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A06FB120FD7361000D05F9 /* SocketService.swift */; };
+		E1BE320820EEDB0200BC8CCB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE320720EEDB0200BC8CCB /* GradientView.swift */; };
+		E1BE320B20EEF8AC00BC8CCB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE320A20EEF8AC00BC8CCB /* Constants.swift */; };
+		E1BE320D20EF40C500BC8CCB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE320C20EF40C500BC8CCB /* LoginVC.swift */; };
+		E1BE320F20EF47E200BC8CCB /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE320E20EF47E200BC8CCB /* CreateAccountVC.swift */; };
+		E1C786F420FFFB02001EE576 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C786F320FFFB02001EE576 /* Message.swift */; };
+		E1C786F62100041B001EE576 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C786F52100041B001EE576 /* KeyboardBoundView.swift */; };
+		E1C786F821000BDA001EE576 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C786F721000BDA001EE576 /* MessageCell.swift */; };
+		E1D6DEA820F442550080607B /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6DEA720F442550080607B /* UserDataService.swift */; };
+		E1D6DEAC20F882490080607B /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6DEAB20F882490080607B /* AvatarPickerVC.swift */; };
+		E1D6DEAE20F885120080607B /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6DEAD20F885120080607B /* AvatarCell.swift */; };
+		E1D6DEB020F956400080607B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6DEAF20F956400080607B /* CircleImage.swift */; };
+		E1D6DEB320F976A30080607B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D6DEB120F976A30080607B /* ProfileVC.swift */; };
+		E1D6DEB420F976A30080607B /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D6DEB220F976A30080607B /* ProfileVC.xib */; };
+		E1DB54E820FC5CF600A54CD2 /* MessegeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DB54E720FC5CF600A54CD2 /* MessegeService.swift */; };
+		E1DB54EA20FC5D6B00A54CD2 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DB54E920FC5D6B00A54CD2 /* Channel.swift */; };
+		E1DB54EC20FC6C4A00A54CD2 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DB54EB20FC6C4A00A54CD2 /* ChannelCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		182808E2B03A26F60945C251 /* Pods-FunChatikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunChatikUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunChatikUITests/Pods-FunChatikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CAA492BDAE6AF8BDCB2288A /* Pods_FunChatik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunChatik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		669BB67C7DB43B03BC29CB05 /* Pods-FunChatik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunChatik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunChatik/Pods-FunChatik.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF408A5A75B15800A9A7E45 /* Pods_FunChatikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunChatikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E108E29120EC5B65000ED27F /* FunChatik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunChatik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E108E29420EC5B65000ED27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E108E29920EC5B65000ED27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E108E29B20EC5B65000ED27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E108E29E20EC5B65000ED27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E108E2A020EC5B65000ED27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10A233820EC60A100C1AA72 /* FunChatik-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunChatik-Bridging-Header.h"; sourceTree = "<group>"; };
+		E10A233920EC60A100C1AA72 /* FunChatikUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunChatikUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E10A233A20EC60A100C1AA72 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "Smack Assets/SWReveal/SWRevealViewController.m"; sourceTree = SOURCE_ROOT; };
+		E10A233B20EC60A100C1AA72 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "Smack Assets/SWReveal/SWRevealViewController.h"; sourceTree = SOURCE_ROOT; };
+		E10A234120EC632000C1AA72 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		E10A234420EC633300C1AA72 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		E126CBC620F332B8006F7652 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E126CBC820F33E36006F7652 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		E1A06FAD20FD6686000D05F9 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
+		E1A06FAE20FD6686000D05F9 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		E1A06FB120FD7361000D05F9 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		E1BE320720EEDB0200BC8CCB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E1BE320A20EEF8AC00BC8CCB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E1BE320C20EF40C500BC8CCB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E1BE320E20EF47E200BC8CCB /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		E1C786F320FFFB02001EE576 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E1C786F52100041B001EE576 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardBoundView.swift; path = "Smack Assets/KeyboardBind View/KeyboardBoundView.swift"; sourceTree = SOURCE_ROOT; };
+		E1C786F721000BDA001EE576 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		E1D6DEA720F442550080607B /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		E1D6DEAB20F882490080607B /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		E1D6DEAD20F885120080607B /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		E1D6DEAF20F956400080607B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E1D6DEB120F976A30080607B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E1D6DEB220F976A30080607B /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		E1DB54E720FC5CF600A54CD2 /* MessegeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessegeService.swift; sourceTree = "<group>"; };
+		E1DB54E920FC5D6B00A54CD2 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		E1DB54EB20FC6C4A00A54CD2 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		E8AA18109C33CBCB33579F36 /* Pods-FunChatik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunChatik.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunChatik/Pods-FunChatik.release.xcconfig"; sourceTree = "<group>"; };
+		FBEC78CD96E828D776E08A20 /* Pods-FunChatikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunChatikUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunChatikUITests/Pods-FunChatikUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E108E28E20EC5B65000ED27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE980494F0797585D985546F /* Pods_FunChatik.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		942710EC6285CF3B8C60CA4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				669BB67C7DB43B03BC29CB05 /* Pods-FunChatik.debug.xcconfig */,
+				E8AA18109C33CBCB33579F36 /* Pods-FunChatik.release.xcconfig */,
+				182808E2B03A26F60945C251 /* Pods-FunChatikUITests.debug.xcconfig */,
+				FBEC78CD96E828D776E08A20 /* Pods-FunChatikUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E108E28820EC5B65000ED27F = {
+			isa = PBXGroup;
+			children = (
+				E108E29320EC5B65000ED27F /* FunChatik */,
+				E108E29220EC5B65000ED27F /* Products */,
+				942710EC6285CF3B8C60CA4F /* Pods */,
+				EAE2131E8ACBCF000BAEFE85 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E108E29220EC5B65000ED27F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E108E29120EC5B65000ED27F /* FunChatik.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E108E29320EC5B65000ED27F /* FunChatik */ = {
+			isa = PBXGroup;
+			children = (
+				E10A233F20EC62FA00C1AA72 /* View */,
+				E1D6DEB520F977040080607B /* XIBs */,
+				E126CBC520F3328E006F7652 /* Services */,
+				E1BE320920EEF88000BC8CCB /* Utilities */,
+				E10A234020EC630000C1AA72 /* Model */,
+				E10A233E20EC62EF00C1AA72 /* Controller */,
+				E10A233720EC602C00C1AA72 /* Supporting Files */,
+				E108E29420EC5B65000ED27F /* AppDelegate.swift */,
+				E108E29820EC5B65000ED27F /* Main.storyboard */,
+				E108E29B20EC5B65000ED27F /* Assets.xcassets */,
+				E108E29D20EC5B65000ED27F /* LaunchScreen.storyboard */,
+				E108E2A020EC5B65000ED27F /* Info.plist */,
+			);
+			path = FunChatik;
+			sourceTree = "<group>";
+		};
+		E10A233720EC602C00C1AA72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E10A233B20EC60A100C1AA72 /* SWRevealViewController.h */,
+				E10A233A20EC60A100C1AA72 /* SWRevealViewController.m */,
+				E10A233820EC60A100C1AA72 /* FunChatik-Bridging-Header.h */,
+				E10A233920EC60A100C1AA72 /* FunChatikUITests-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E10A233E20EC62EF00C1AA72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E10A234120EC632000C1AA72 /* ChatVC.swift */,
+				E10A234420EC633300C1AA72 /* ChannelVC.swift */,
+				E1BE320C20EF40C500BC8CCB /* LoginVC.swift */,
+				E1BE320E20EF47E200BC8CCB /* CreateAccountVC.swift */,
+				E1D6DEAB20F882490080607B /* AvatarPickerVC.swift */,
+				E1D6DEB120F976A30080607B /* ProfileVC.swift */,
+				E1A06FAD20FD6686000D05F9 /* AddChannelVC.swift */,
+				E1C786F52100041B001EE576 /* KeyboardBoundView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E10A233F20EC62FA00C1AA72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE320720EEDB0200BC8CCB /* GradientView.swift */,
+				E126CBC820F33E36006F7652 /* RoundedButton.swift */,
+				E1D6DEAD20F885120080607B /* AvatarCell.swift */,
+				E1D6DEAF20F956400080607B /* CircleImage.swift */,
+				E1DB54EB20FC6C4A00A54CD2 /* ChannelCell.swift */,
+				E1C786F721000BDA001EE576 /* MessageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E10A234020EC630000C1AA72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1DB54E920FC5D6B00A54CD2 /* Channel.swift */,
+				E1C786F320FFFB02001EE576 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E126CBC520F3328E006F7652 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E126CBC620F332B8006F7652 /* AuthService.swift */,
+				E1D6DEA720F442550080607B /* UserDataService.swift */,
+				E1DB54E720FC5CF600A54CD2 /* MessegeService.swift */,
+				E1A06FB120FD7361000D05F9 /* SocketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1BE320920EEF88000BC8CCB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE320A20EEF8AC00BC8CCB /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E1D6DEB520F977040080607B /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				E1D6DEB220F976A30080607B /* ProfileVC.xib */,
+				E1A06FAE20FD6686000D05F9 /* AddChannelVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		EAE2131E8ACBCF000BAEFE85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CAA492BDAE6AF8BDCB2288A /* Pods_FunChatik.framework */,
+				7FF408A5A75B15800A9A7E45 /* Pods_FunChatikUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E108E29020EC5B65000ED27F /* FunChatik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E108E2AE20EC5B66000ED27F /* Build configuration list for PBXNativeTarget "FunChatik" */;
+			buildPhases = (
+				3B7A2750BE6097457B28C15C /* [CP] Check Pods Manifest.lock */,
+				E108E28D20EC5B65000ED27F /* Sources */,
+				E108E28E20EC5B65000ED27F /* Frameworks */,
+				E108E28F20EC5B65000ED27F /* Resources */,
+				6442F99B69AEF7EC50F7E581 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunChatik;
+			productName = FunChatik;
+			productReference = E108E29120EC5B65000ED27F /* FunChatik.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E108E28920EC5B65000ED27F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Natalia;
+				TargetAttributes = {
+					E108E29020EC5B65000ED27F = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = E108E28C20EC5B65000ED27F /* Build configuration list for PBXProject "FunChatik" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E108E28820EC5B65000ED27F;
+			productRefGroup = E108E29220EC5B65000ED27F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E108E29020EC5B65000ED27F /* FunChatik */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E108E28F20EC5B65000ED27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A06FB020FD6686000D05F9 /* AddChannelVC.xib in Resources */,
+				E1D6DEB420F976A30080607B /* ProfileVC.xib in Resources */,
+				E108E29F20EC5B65000ED27F /* LaunchScreen.storyboard in Resources */,
+				E108E29C20EC5B65000ED27F /* Assets.xcassets in Resources */,
+				E108E29A20EC5B65000ED27F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7A2750BE6097457B28C15C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunChatik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6442F99B69AEF7EC50F7E581 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FunChatik/Pods-FunChatik-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunChatik/Pods-FunChatik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E108E28D20EC5B65000ED27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C786F62100041B001EE576 /* KeyboardBoundView.swift in Sources */,
+				E1A06FB220FD7361000D05F9 /* SocketService.swift in Sources */,
+				E1D6DEB320F976A30080607B /* ProfileVC.swift in Sources */,
+				E1DB54EC20FC6C4A00A54CD2 /* ChannelCell.swift in Sources */,
+				E10A234520EC633300C1AA72 /* ChannelVC.swift in Sources */,
+				E1D6DEAC20F882490080607B /* AvatarPickerVC.swift in Sources */,
+				E1C786F821000BDA001EE576 /* MessageCell.swift in Sources */,
+				E126CBC920F33E36006F7652 /* RoundedButton.swift in Sources */,
+				E1C786F420FFFB02001EE576 /* Message.swift in Sources */,
+				E1DB54EA20FC5D6B00A54CD2 /* Channel.swift in Sources */,
+				E1D6DEB020F956400080607B /* CircleImage.swift in Sources */,
+				E10A234220EC632000C1AA72 /* ChatVC.swift in Sources */,
+				E1D6DEA820F442550080607B /* UserDataService.swift in Sources */,
+				E1BE320F20EF47E200BC8CCB /* CreateAccountVC.swift in Sources */,
+				E126CBC720F332B8006F7652 /* AuthService.swift in Sources */,
+				E1DB54E820FC5CF600A54CD2 /* MessegeService.swift in Sources */,
+				E1BE320D20EF40C500BC8CCB /* LoginVC.swift in Sources */,
+				E1A06FAF20FD6686000D05F9 /* AddChannelVC.swift in Sources */,
+				E1BE320820EEDB0200BC8CCB /* GradientView.swift in Sources */,
+				E1D6DEAE20F885120080607B /* AvatarCell.swift in Sources */,
+				E108E29520EC5B65000ED27F /* AppDelegate.swift in Sources */,
+				E10A233C20EC60A100C1AA72 /* SWRevealViewController.m in Sources */,
+				E1BE320B20EEF8AC00BC8CCB /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E108E29820EC5B65000ED27F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E108E29920EC5B65000ED27F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E108E29D20EC5B65000ED27F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E108E29E20EC5B65000ED27F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E108E2AC20EC5B66000ED27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E108E2AD20EC5B66000ED27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E108E2AF20EC5B66000ED27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669BB67C7DB43B03BC29CB05 /* Pods-FunChatik.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FunChatik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.FunChatik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FunChatik/Supporting Files/FunChatik-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E108E2B020EC5B66000ED27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8AA18109C33CBCB33579F36 /* Pods-FunChatik.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FunChatik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.FunChatik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FunChatik/Supporting Files/FunChatik-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E108E28C20EC5B65000ED27F /* Build configuration list for PBXProject "FunChatik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E108E2AC20EC5B66000ED27F /* Debug */,
+				E108E2AD20EC5B66000ED27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E108E2AE20EC5B66000ED27F /* Build configuration list for PBXNativeTarget "FunChatik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E108E2AF20EC5B66000ED27F /* Debug */,
+				E108E2B020EC5B66000ED27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E108E28920EC5B65000ED27F /* Project object */;
+}
